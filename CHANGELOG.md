@@ -2,14 +2,35 @@
 
 All notable changes to this project will be documented in this file.
 
-## [Unreleased] - 1.1.0
+## [1.1.0] - 2026-09-11
+
+### 📝 Other Changes
+
+- Become MeddlingIdiot.Velopack and publish to nuget.org ([db691b0](../../commit/db691b0))
+
+## [1.0.12] - 2026-08-31
 
 ### 📝 Other Changes
 
 - force a build ([1566b1e](../../commit/1566b1e))
+
+## [1.0.11] - 2026-08-27
+
+### 📝 Other Changes
+
 - update velopack to point at the correct container ([fc10adf](../../commit/fc10adf))
+
+## [1.0.10] - 2026-08-24
+
+### 📝 Other Changes
+
 - fix ([b09349e](../../commit/b09349e))
 - break the build ([a7f25d9](../../commit/a7f25d9))
+
+## [1.0.9] - 2026-08-23
+
+### 📝 Other Changes
+
 - Trigger a build ([e74c576](../../commit/e74c576))
 
 ## [1.0.8] - 2026-08-07

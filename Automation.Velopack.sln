@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeddlingIdiot.Velopack", "MeddlingIdiot.Velopack\MeddlingIdiot.Velopack.csproj", "{3E653E83-C793-4812-823A-AD44BD75A96C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automation.Velopack", "Automation.Velopack\Automation.Velopack.csproj", "{3E653E83-C793-4812-823A-AD44BD75A96C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeddlingIdiot.Velopack.UnitTests", "MeddlingIdiot.Velopack.UnitTests\MeddlingIdiot.Velopack.UnitTests.csproj", "{BE4DA38D-FC71-4DD0-BDD2-3D9B7EAEC648}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automation.Velopack.UnitTests", "Automation.Velopack.UnitTests\Automation.Velopack.UnitTests.csproj", "{BE4DA38D-FC71-4DD0-BDD2-3D9B7EAEC648}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "build\_build.csproj", "{58C12C89-DCC0-4EC8-9143-36E8E22EC880}"
 EndProject

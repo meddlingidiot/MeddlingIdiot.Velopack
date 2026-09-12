@@ -28,7 +28,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\MeddlingIdiot.Velopack\MeddlingIdiot.Velopack.csproj" />
+      <ProjectReference Include="..\Automation.Velopack\Automation.Velopack.csproj" />
     </ItemGroup>
 
 </Project>

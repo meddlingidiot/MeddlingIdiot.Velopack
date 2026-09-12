@@ -19,7 +19,7 @@ Add a reference to the `MeddlingIdiot.Velopack` project in your application:
 
 ```xml
 <ItemGroup>
-  <ProjectReference Include="..\MeddlingIdiot.Velopack\MeddlingIdiot.Velopack.csproj" />
+  <ProjectReference Include="..\MeddlingIdiot.Velopack\Automation.Velopack.csproj" />
 </ItemGroup>
 ```
 
@@ -28,7 +28,7 @@ Add a reference to the `MeddlingIdiot.Velopack` project in your application:
 In your application's startup code:
 
 ```csharp
-using MeddlingIdiot.Velopack;
+using Automation.Velopack;
 
 // Call this early in your application startup
 Velopack.Build().Run();
@@ -106,7 +106,7 @@ The test project includes comprehensive tests for:
 ## Project Structure
 
 - **MeddlingIdiot.Velopack** - Main library project
-- **MeddlingIdiot.Velopack.UnitTests** - xUnit test project
+- **Automation.Velopack.UnitTests** - xUnit test project
 
 ## License
 

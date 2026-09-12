@@ -2,9 +2,10 @@
 mode: ContinuousDelivery
 assembly-versioning-scheme: MajorMinorPatch
 tag-pre-release-weight: 60000
-# The package id is new on nuget.org, but Automation.Velopack got to 1.0.11 on the private
-# feed. Starting at 1.1.0 keeps the numbers moving forwards for anyone reading both.
-next-version: 1.1.0
+# 1.1.0 shipped with MeddlingIdiot.* namespaces; 1.2.0 puts them back to Automation.* to
+# match the house convention. That is a breaking change for anyone who took 1.1.0 - which is
+# Greenlight and CarsClient, both updated in step - so it gets a minor rather than a patch.
+next-version: 1.2.0
 tag-prefix: '[vV]?'
 branches:
   main:

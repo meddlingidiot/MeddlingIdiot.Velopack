@@ -2,9 +2,9 @@ using System.Runtime.CompilerServices;
 using Velopack;
 using Velopack.Sources;
 
-[assembly: InternalsVisibleTo("MeddlingIdiot.Velopack.UnitTests")]
+[assembly: InternalsVisibleTo("Automation.Velopack.UnitTests")]
 
-namespace MeddlingIdiot.Velopack;
+namespace Automation.Velopack;
 
 public static class VelopackBootstrapper
 {

@@ -9,10 +9,15 @@
         <TargetFramework>net10.0</TargetFramework>
 
         <!-- ── Packaging ────────────────────────────────────────────────────
-             Published to nuget.org. The id changed from Automation.Velopack when this
-             stopped being a mirror of the work repository: one id served by two feeds from
-             two diverged codebases resolves to whichever version number is higher, silently
-             and differently per machine.
+             The package id is MeddlingIdiot.*, the assembly and namespaces are Automation.*,
+             and that is the house convention rather than an oversight: MeddlingIdiot names
+             products, Automation names the build and release plumbing behind them. Fallout's
+             components are shaped the same way.
+
+             The id had to move regardless of that. The work repository this was forked from
+             still publishes Automation.Velopack to its own feed, and one id served by two
+             feeds from two diverged codebases resolves to whichever version number is
+             higher - silently, and differently per machine.
         -->
         <PackageId>MeddlingIdiot.Velopack</PackageId>
         <Description>Velopack startup and update plumbing for MeddlingIdiot desktop apps: channel resolution, the update check, and the version information an app shows about itself.</Description>

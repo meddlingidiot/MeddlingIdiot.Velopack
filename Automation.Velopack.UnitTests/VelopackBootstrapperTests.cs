@@ -1,4 +1,4 @@
-namespace MeddlingIdiot.Velopack.UnitTests;
+namespace Automation.Velopack.UnitTests;
 
 public class VelopackBootstrapperTests : IDisposable
 {

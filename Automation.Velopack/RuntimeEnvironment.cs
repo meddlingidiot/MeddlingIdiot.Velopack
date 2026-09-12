@@ -2,7 +2,7 @@
 using System.Runtime.InteropServices;
 using System.Security.Principal;
 
-namespace MeddlingIdiot.Velopack;
+namespace Automation.Velopack;
 
 [ExcludeFromCodeCoverage]
 public static class RuntimeEnvironment
