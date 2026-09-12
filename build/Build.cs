@@ -14,12 +14,18 @@ using Automation.Fallout.Components.Parameters;
 ///   - Microsoft VisualStudio     https://nuke.build/visualstudiowoh
 ///   - Microsoft VSCode           https://nuke.build/vscode
 
-public class Build : GitHubActionsBuild, IShowVersion, IClean, ICompile, IRestore, IScanForSecrets, IRunUnitTests, IRunIntegrationTests, IGenerateCoverageReport, ITest, IUpdateChangelog, IPackageGitHub, ITagRelease, IAnnounceRelease
+public class Build : GitHubActionsBuild, IShowVersion, IClean, ICompile, IRestore, IScanForSecrets, IRunUnitTests, IRunIntegrationTests, IGenerateCoverageReport, ITest, IUpdateChangelog, INuGetPublish, ITagRelease, IAnnounceRelease
 {
 
     public static int Main() => Execute<Build>(
-        x => ((IPackageGitHub)x).ReleasePackage);
+        x => ((INuGetPublish)x).PublishNuGet);
+
+    // Was IPackageGitHub. GitHub Packages needs a token even for public packages, which is
+    // no use to an app that just wants to reference this and get on with updating itself.
+    string? IHasNuGetOrg.NuGetOwner => "themeddlingidiot";
+
+    // The only publish step here, so it is the one that tags.
+    bool INuGetPublish.TagsReleasesFromNuGet => true;
 
     int IHasTests.MinCoverageThreshold => 40;
-    string IHasGitHubPackages.GitHubOwner => "meddlingidiot";
 }

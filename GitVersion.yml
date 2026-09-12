@@ -2,7 +2,9 @@
 mode: ContinuousDelivery
 assembly-versioning-scheme: MajorMinorPatch
 tag-pre-release-weight: 60000
-# Removed next-version since v1.0.0 tag exists - GitVersion will use tag as baseline
+# The package id is new on nuget.org, but Automation.Velopack got to 1.0.11 on the private
+# feed. Starting at 1.1.0 keeps the numbers moving forwards for anyone reading both.
+next-version: 1.1.0
 tag-prefix: '[vV]?'
 branches:
   main:

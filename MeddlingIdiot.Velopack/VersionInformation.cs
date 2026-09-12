@@ -1,6 +1,6 @@
 using System.Reflection;
 
-namespace Automation.Velopack;
+namespace MeddlingIdiot.Velopack;
 
 public static class VersionInformation
 {

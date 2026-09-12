@@ -2,18 +2,49 @@
 
 All notable changes to this project will be documented in this file.
 
-## [Unreleased] - 1.0.4-beta.9
+## [Unreleased] - 1.1.0
 
 ### 📝 Other Changes
 
+- force a build ([1566b1e](../../commit/1566b1e))
+- update velopack to point at the correct container ([fc10adf](../../commit/fc10adf))
+- fix ([b09349e](../../commit/b09349e))
+- break the build ([a7f25d9](../../commit/a7f25d9))
+- Trigger a build ([e74c576](../../commit/e74c576))
+
+## [1.0.8] - 2026-08-07
+
+### 📝 Other Changes
+
+- upgrade to Fallout and using windows-latest ([4ba5208](../../commit/4ba5208))
 - build ([a4a93bd](../../commit/a4a93bd))
 - trigger a bulid ([defd3e6](../../commit/defd3e6))
 - Trigger a build ([c92c57a](../../commit/c92c57a))
+
+## [1.0.7] - 2026-08-06
+
+### 📝 Other Changes
+
 - Trigger velopack on my machine ([abd5363](../../commit/abd5363))
+
+## [1.0.6] - 2026-08-05
+
+### 📝 Other Changes
+
 - Upgraded with live Fallout build ([c54b891](../../commit/c54b891))
 - Upgraded Nuke to Fallout for the build system... ([e51e86a](../../commit/e51e86a))
 - Port ProMiles changes to VelopackBootstrapper and version logic ([262187a](../../commit/262187a))
+
+## [1.0.5] - 2026-07-07
+
+### 📝 Other Changes
+
 - Bump Velopack package to version 1.2.0 ([e95f706](../../commit/e95f706))
+
+## [1.0.4] - 2026-05-07
+
+### 📝 Other Changes
+
 - update dependencies in build and test projects ([a48c7f2](../../commit/a48c7f2))
 
 ## [1.0.3] - 2026-01-17

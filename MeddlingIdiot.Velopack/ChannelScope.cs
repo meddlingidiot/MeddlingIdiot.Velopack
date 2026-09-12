@@ -1,4 +1,4 @@
-﻿namespace Automation.Velopack;
+﻿namespace MeddlingIdiot.Velopack;
 
 public enum ChannelScope
 {

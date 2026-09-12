@@ -1,4 +1,4 @@
-# Automation.Velopack
+# MeddlingIdiot.Velopack
 
 A reusable Velopack bootstrapper library that provides automated update management with flexible channel configuration for .NET applications.
 
@@ -15,11 +15,11 @@ This library simplifies integrating Velopack updates into your .NET applications
 
 ### Installation
 
-Add a reference to the `Automation.Velopack` project in your application:
+Add a reference to the `MeddlingIdiot.Velopack` project in your application:
 
 ```xml
 <ItemGroup>
-  <ProjectReference Include="..\Automation.Velopack\Automation.Velopack.csproj" />
+  <ProjectReference Include="..\MeddlingIdiot.Velopack\MeddlingIdiot.Velopack.csproj" />
 </ItemGroup>
 ```
 
@@ -28,7 +28,7 @@ Add a reference to the `Automation.Velopack` project in your application:
 In your application's startup code:
 
 ```csharp
-using Automation.Velopack;
+using MeddlingIdiot.Velopack;
 
 // Call this early in your application startup
 Velopack.Build().Run();
@@ -105,8 +105,8 @@ The test project includes comprehensive tests for:
 
 ## Project Structure
 
-- **Automation.Velopack** - Main library project
-- **Automation.Velopack.UnitTests** - xUnit test project
+- **MeddlingIdiot.Velopack** - Main library project
+- **MeddlingIdiot.Velopack.UnitTests** - xUnit test project
 
 ## License
 
