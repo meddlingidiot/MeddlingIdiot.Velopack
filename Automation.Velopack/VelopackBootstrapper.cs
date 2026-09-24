@@ -63,15 +63,14 @@ public static class VelopackBootstrapper
     /// uploaded to one container and asked another for updates -- answering 404 forever, and
     /// only visible once an update was actually published.
     ///
-    /// Read-and-list only. A SAS embedded in a shipped desktop application is readable by
-    /// anyone who has the application, so it must not be able to write or delete: that would
-    /// hand every user the ability to replace the installers everyone else downloads.
-    /// Expires 2029-12-31.
+    /// No SAS: the container's blob access level is set to anonymous read ("Blob") in Azure,
+    /// so this is a plain public URL with no embedded credential. This is compiled into every
+    /// shipped app and published in this package on nuget.org, so anything other than
+    /// anonymous read here would be a real leak, not just a visible one -- anonymous access
+    /// also can't write or delete by construction, and there's nothing to rotate or expire.
     /// </remarks>
     private const string DefaultSourceUrl =
-        "https://meddlingidiotinstallers.blob.core.windows.net/installers/"
-        + "?sp=rl&st=2025-12-28T02:30:01Z&se=2029-12-31T10:45:01Z&spr=https&sv=2024-11-04"
-        + "&sr=c&sig=gnclHWB2peK1jLBP1Mf9yhuiCqgmH6Tv5qusYtgVADc%3D";
+        "https://meddlingidiotinstallers.blob.core.windows.net/installers/";
 
     /// <summary>
     /// Where to look for updates, in order of precedence: the VELOPACK_SOURCE_URL environment
